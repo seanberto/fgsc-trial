@@ -1,0 +1,793 @@
+
+.section-home
+	background-color: #000
+	background-image: url(../img/home-bg.jpg)
+	background-repeat: no-repeat
+	background-size: cover
+	background-position: center top
+	position: relative
+	overflow: hidden
+	&-blink
+		padding: 50px 0
+		background-color: rgba(0,0,0,0.4)
+	@include media-breakpoint-down(lg)
+		.container
+			max-width: 100%
+	@include media-breakpoint-down(xs)
+		background-size: 2000px
+		background-position: -100px bottom
+
+	&-text-box
+		margin: 0 auto
+		max-width: 590px
+		position: relative
+		z-index: 2
+
+	&-list-box
+		padding-left: 150px
+		@include media-breakpoint-down(md)
+			padding-left: 0
+
+		.custom-check-list
+			li 
+				list-style: none
+				+rem(28)
+				color: #fff
+				text-shadow: 0px 0px 2px rgba(0,0,0,0.6)
+				@include media-breakpoint-down(sm)
+					+rem(24)
+				@include media-breakpoint-down(xs)
+					+rem(22)
+
+
+	&-img
+		position: absolute
+		right: -400px
+		top: -50px
+		z-index: 3
+		img 
+			width: 100%
+			max-width: 500px
+			@include media-breakpoint-down(md)
+				max-width: 400px
+			@include media-breakpoint-down(xs)
+				max-width: 200px
+		@include media-breakpoint-down(md)
+			right: -150px
+			top: 0
+			z-index: -1
+		@include media-breakpoint-down(sm)
+			right: -110px
+		@include media-breakpoint-down(xs)
+			right: -50px
+			top: auto
+			bottom: 0px
+
+	&-btn
+		display: inline-block
+		img
+			width: 100%
+			max-width: 318px
+			+trans
+		&:hover
+			cursor: pointer
+			text-decoration: none
+		&:hover img
+			transform: scale(1.01)
+
+
+.section-home-title-box
+	position: relative
+
+.section-home-logo
+	position: absolute
+	left: 17%
+	top: 0
+	img 
+		width: 100%
+		max-width: 90px
+	@include media-breakpoint-down(lg)
+		position: static
+
+
+.section-home-title
+	letter-spacing: -1px
+	line-height: 46px
+	padding-left: 25%
+	@include media-breakpoint-down(lg)
+		padding-left: 0
+	@include media-breakpoint-down(sm)
+		line-height: inherit
+
+
+
+.custom-check-list
+	padding-left: 0
+	li 
+		list-style: none
+		+rem(22)
+		i 
+			margin-right: 10px
+			font-weight: 600
+			color: $warning
+
+
+
+.section-owl-carousel-logo
+	background-color: #e2e2e2
+	padding: 20px 0
+
+.owl-carousel-logo
+	.item 
+		text-align: center
+		img
+			width: 100%
+			max-width: 150px
+			margin: 0 auto
+
+
+
+
+
+.section-about-product
+	padding: 70px 0
+	@include media-breakpoint-down(md)
+		.container
+			max-width: 100%
+
+.section-logo-line
+	margin-bottom: 20px
+	img
+		margin: 0 auto
+		display: block
+		width: 100%
+		max-width: 669px
+
+.section-about-product-img1
+	img
+		width: 100%
+		max-width: 440px
+		@include media-breakpoint-down(lg)
+			max-width: 300px
+			display: block
+			margin: 0 auto
+
+.section-about-product-img2
+	width: 100%
+	max-width: 460px
+	@include media-breakpoint-down(lg)
+		max-width: 300px
+		display: block
+		margin: 0 auto
+
+.section-list
+	padding: 20px	0
+	background-color: #000
+	li 
+		margin-right: 50px
+		color: #fff
+		display: inline-block
+		font-weight: 600
+		@include media-breakpoint-down(xs)
+			margin-right: 0
+			text-align: left
+		i 
+			+rem(28)
+		&:last-child
+			margin-right: 0
+
+
+
+
+
+
+
+
+
+.section-reviews
+	background-color: #151514
+	background-image: url(../img/reviews-bg.jpg)
+	background-repeat: no-repeat
+	background-size: cover
+	background-position: top
+	&-blink
+		padding: 100px 0
+		background-color: rgba(0,0,0,0)
+		@include media-breakpoint-down(sm)
+			padding: 50px 0
+	@include media-breakpoint-down(sm)
+		.container
+			max-width: 100%
+
+.owl-reviews-box
+	padding-top: 30px
+	position: relative
+
+.reviews-owl-btn-box
+	position: absolute
+	top: 50%
+	left: 0
+	right: 0
+	z-index: 5
+	@include media-breakpoint-down(md)
+		left: -15px
+		right: -15px
+		top: 35%
+	@include media-breakpoint-down(sm)
+		top: 25%
+
+
+.reviews-owl-btn
+	border-radius: 50%
+	padding-top: 2px
+	padding-bottom: 2px
+	+rem(26)
+	line-height: 0
+	position: absolute
+	top: 0
+	&.prev
+		left: 0
+	&.next
+		right: 0
+	i
+		font-weight: 600
+
+.owl-dots-btn-box
+
+.owl-dots-btn
+	padding: 0
+	margin: 0
+	text-align: center
+	li 
+		display: inline-block
+
+	.btn 
+		background-color: inherit
+		padding: 0
+		border: 4px solid transparent
+		border-radius: 50%
+		outline: none
+		box-shadow: none
+		+trans
+		img
+			width: 100%
+			max-width: 151px
+			border-radius: 50%
+			@include media-breakpoint-down(sm)
+				max-width: 75px
+		&:hover
+			border: 4px solid $warning
+		&:focus
+			box-shadow: none
+			outline: none
+
+.owl-dots-btn-box
+	.owl-dot
+		margin-right: 15px
+		margin-left: 15px
+		position: relative
+		@include media-breakpoint-down(xs)
+			margin-right: 0
+			margin-left: 0
+
+		&::before
+			content: '\f2fe'
+			display: inline-block
+			font-family: Material-Design-Iconic-Font
+			color: transparent
+			+trans
+			position: absolute
+			bottom: 30px
+			left: 50%
+			margin-left: -7px
+			+rem(28)
+
+
+	.owl-dot.active
+		padding-bottom: 40px
+		margin-bottom: 10px
+
+		.btn 
+			border: 4px solid $warning
+
+		&::before
+			color: #da6532
+			bottom: 0
+
+
+.owl-carousel-reviews
+
+.review-card
+	text-align: center
+	width: 100%
+	max-width: 850px
+	margin: 0 auto
+	&-text
+		+rem(20)
+		line-height: 26px
+		color: #fff
+		font-weight: 400
+		margin-bottom: 0px
+		margin-bottom: 50px
+	&-rating
+		padding: 0
+		margin: 0
+		margin-bottom: 20px
+		li 
+			display: inline-block
+		i 
+			+rem(26)
+			color: $warning
+	&-author
+		+rem(20)
+		line-height: 26px
+		color: #fff
+		font-weight: 600
+		margin-bottom: 0px
+
+
+
+.section-call-to-action
+	background-color: $danger
+	padding: 20px 0
+
+	&-box
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		align-items: center
+		justify-content: space-around
+		@include media-breakpoint-down(sm)
+			display: block
+			text-align: center
+
+	@include media-breakpoint-down(lg)
+		.container
+			max-width: 100%
+
+
+.call-action-img-arr
+	width: 100%
+	max-width: 5px
+	margin-right: 20px
+	margin-left: 20px
+	@include media-breakpoint-down(sm)
+		display: none
+
+.btn-call-action
+	display: inline-block
+	img
+		width: 100%
+		max-width: 315px
+		+trans
+	&:hover
+		cursor: pointer
+		text-decoration: none
+	&:hover img
+		transform: scale(1.01)
+	@include media-breakpoint-down(lg)
+		width: 100%
+	@include media-breakpoint-down(sm)
+		width: auto
+
+
+.trast-card
+	background-color: #fff
+	border: 1px solid $danger
+	margin-right: 2px
+	@include media-breakpoint-down(md)
+		margin-right: 0
+		margin-bottom: 20px
+	&-top
+		padding: 20px 15px
+		background-color: #fff
+		+rem(27)
+		text-align: center
+		@include media-breakpoint-down(xs)
+			+rem(24)
+	&-bottom
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		align-items: stretch
+		justify-content: center
+		@include media-breakpoint-down(sm)
+			display: block
+
+		&--left
+			background-color: $danger
+			padding: 22px 10px
+			margin-bottom: 0
+			display: inline-block
+			color: #fff
+			text-align: center
+			position: relative
+			min-width: 250px
+			+rem(38)
+			line-height: 33px
+			@include media-breakpoint-down(sm)
+				display: block
+				br
+					display: none
+			@include media-breakpoint-down(xs)
+				+rem(30)
+			&::before
+				content: ""
+				display: inline-block
+				width: 0
+				height: 0
+				border-top: 11px solid transparent
+				border-left: 17px solid $danger
+				border-bottom: 11px solid transparent
+				position: absolute
+				right: -16px
+				margin-top: -8px
+				top: 50%
+				@include media-breakpoint-down(sm)
+					display: none
+		&--right
+			background-color: #eee
+			padding: 26px 50px
+			margin-bottom: 0
+			display: inline-block
+			text-align: center
+			@include media-breakpoint-down(xs)
+				padding: 20px 15px
+
+	&-img
+		height: 100%
+		width: 100%
+		max-width: 450px
+		background-image: url(../img/sec1-img1.png)
+		background-size: cover
+		background-position: center
+		background-repeat: no-repeat
+		@include media-breakpoint-down(md)
+			min-height: 300px
+			margin: 0 auto
+			background-size: contain
+		@include media-breakpoint-down(xs)
+			min-height: 230px
+
+
+	&-footer
+		padding-top: 30px
+		&--img
+			width: 100%
+			max-width: 80px
+
+
+
+
+
+
+
+
+
+.section-all-natural
+	background-image: url(../img/section-all-natural-bg.jpg)
+	background-size: cover
+	background-repeat: no-repeat
+	background-position: center
+	position: relative
+	overflow: hidden
+	@include media-breakpoint-down(md)
+		background-position: -50px
+
+	&-blink
+		padding: 70px 0
+		background-color: rgba(255,255,255,0.3)
+		@include media-breakpoint-down(md)
+			background-color: rgba(255,255,255,0.8)
+
+	&-content
+		max-width: 800px
+		margin: 0 auto
+
+		&--text
+			max-width: 500px
+			margin: 0 auto
+			margin-bottom: 40px
+			@include media-breakpoint-down(md)
+				max-width: 100%
+
+	&-title
+		+rem(60)
+		text-transform: uppercase
+		color: #000
+		line-height: 52px
+		margin-bottom: 15px
+		text-shadow: 0px 0px 5px rgba(255, 255, 255, 0.5)
+		text-align: center
+		@include media-breakpoint-down(sm)
+			+rem(40)
+		@include media-breakpoint-down(xs)
+			+rem(30)
+		span 
+			+rem(70)
+			color: $danger
+			@include media-breakpoint-down(sm)
+				+rem(50)
+			@include media-breakpoint-down(xs)
+				+rem(36)
+	&-text
+		color: #2d2d2d
+		+rem(20)
+		text-shadow: 0px 0px 5px rgba(255, 255, 255, 0.5)
+		span 
+			font-weight: 800
+	&-list
+		@include media-breakpoint-down(md)
+			padding: 0
+		li 
+			list-style: none
+			margin-bottom: 15px
+			padding: 7px
+			padding-left: 60px
+			background-color: rgba(0, 0, 0, 0.8)
+			color: #fff
+			font-weight: 800
+			text-transform: uppercase
+			+rem(30)
+			position: relative
+			@include media-breakpoint-down(sm)
+				+rem(20)
+			&:nth-child(2)
+				margin-left: 40px
+				@include media-breakpoint-down(xs)
+					margin-left: 0
+			&:nth-child(3)
+				margin-left: 80px
+				@include media-breakpoint-down(xs)
+					margin-left: 0
+			&:nth-child(4)
+				margin-left: 120px
+				@include media-breakpoint-down(xs)
+					margin-left: 0
+			&::before
+				content: ""
+				display: inline-block
+				width: 0
+				height: 0
+				border-top: 18px solid transparent
+				border-left: 24px solid $danger
+				border-bottom: 18px solid transparent
+				position: absolute
+				left: 20px
+				margin-top: -18px
+				top: 50%
+				@include media-breakpoint-down(sm)
+					border-top: 10px solid transparent
+					border-left: 18px solid $danger
+					border-bottom: 10px solid transparent
+					margin-top: -11px
+		&-box
+			position: relative
+			margin: 60px
+			@include media-breakpoint-down(md)
+				margin: 0
+				padding-right: 50px
+			@include media-breakpoint-down(xs)
+				padding-right: 0
+
+	&-img
+		width: 100%
+		max-width: 500px
+		position: absolute
+		right: -250px
+		top: -130px
+		z-index: 3
+		@include media-breakpoint-down(md)
+			max-width: 400px
+			right: -140px
+			top: -75px
+		@include media-breakpoint-down(sm)
+			right: -220px
+		@include media-breakpoint-down(xs)
+			position: static
+			max-width: 200px
+			margin: 0 auto
+			display: block
+
+
+
+
+.section-form
+	padding: 70px 0
+	background-image: url(../img/section-form-bg.jpg)
+	background-size: cover
+	background-position: center
+	background-repeat: no-repeat
+	@include media-breakpoint-down(lg)
+		background-position: right
+
+	.section-home-list-box
+		width: 100%
+		// max-width: 360px
+		margin: 0 auto
+		padding: 0
+		position: relative
+
+	.custom-check-list
+		max-width: 360px
+		margin-left: auto
+		margin-bottom: 0
+		margin-right: 80px
+		@include media-breakpoint-down(md)
+			margin: 0 auto
+			margin-bottom: 30px
+
+.contact-form-container 
+	background-color: $danger
+	border-radius: 8px
+	position: relative
+	overflow: hidden
+	width: 100%
+	max-width: 390px
+	margin: 0 auto
+
+.form
+	padding: 25px 12px 10px
+	background-color: #000
+	border-radius: 8px
+	margin: 0 10px 10px
+	&-header 
+		font-weight: 700
+		letter-spacing: -2px
+		+rem(28)
+		color: #fff
+		text-align: center
+		line-height: 34px
+		text-transform: uppercase
+		padding: 15px 10px
+		span 
+			+rem(38)
+			font-weight: 800
+
+.col-form-label
+	color: #fff
+	padding-right: 0
+	padding-top: 8px
+	text-align: right
+	+rem(13)
+	@include media-breakpoint-down(xs)
+		padding-right: 15px
+		text-align: left
+
+
+.form-control
+	height: calc(2rem + 7px)
+
+
+.form-btn
+	display: inline-block
+	border: none
+	background-color: #000
+	img
+		width: 100%
+		max-width: 280px
+		+trans
+	&:hover 
+		text-decoration: none
+		cursor: pointer
+
+
+
+
+.pulse
+	animation-name: pulse
+	-webkit-animation-name: pulse
+	animation-duration: 1.5s
+	-webkit-animation-duration: 1.5s
+	animation-iteration-count: infinite
+	-webkit-animation-iteration-count: infinite
+
+@keyframes "pulse"
+	0%
+		transform: scale(0.9)
+		opacity: 0.9
+
+	50%
+		transform: scale(1)
+		opacity: 1
+
+	100%
+		transform: scale(0.9)
+		opacity: 0.9
+
+
+@-webkit-keyframes "pulse"
+	0%
+		-webkit-transform: scale(0.95)
+		opacity: 0.7
+
+	50%
+		-webkit-transform: scale(1)
+		opacity: 1
+
+	100%
+		-webkit-transform: scale(0.95)
+		opacity: 0.7
+
+
+
+.form-logo
+	width: 100%
+	max-width: 236px
+	margin: 0 auto
+	display: block
+
+
+.form-product-img
+	position: absolute
+	left: -150px
+	bottom: -50px
+	width: 100%
+	max-width: 500px
+	z-index: 3
+	@include media-breakpoint-down(lg)
+		position: relative
+		max-width: 300px
+		left: 0
+		bottom: 0
+	@include media-breakpoint-down(md)
+		display: none
+
+.form-product-arrow
+	position: absolute
+	left: 110px
+	bottom: 50px
+	width: 100%
+	max-width: 500px
+	z-index: 2
+	@include media-breakpoint-down(lg)
+		left: 155px
+		bottom: 100px
+		max-width: 400px
+	@include media-breakpoint-down(md)
+		display: none
+
+
+.footer
+	padding: 50px 0
+	text-align: center
+	
+	a 
+		color: inherit
+
+.footer-mb
+	margin-bottom: 20px
+
+.footer-list
+	padding: 0
+	margin: 0
+	margin-bottom: 20px
+	li 
+		display: inline-block
+		list-style: none
+		margin-right: 20px
+		border-right: 1px solid #525252
+		padding-right: 20px
+		&:last-child
+			margin-right: 0
+			padding-right: 0
+			border: none
+	a 
+		display: inline-block
+
+
+
+
+
+
+
+
+
+
+
+
+

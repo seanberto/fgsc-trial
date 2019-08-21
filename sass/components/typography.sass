@@ -1,0 +1,392 @@
+
+html
+	font-size: $font-size-base + px
+
+body
+	+rem(14)
+	color: $body-color
+	&.no-scroll
+		margin: 0
+		height: 100%
+		overflow: hidden
+
+.main
+	position: relative
+	overflow: hidden
+
+.ff-open-sans
+	font-family: 'Open Sans', sans-serif !important
+
+.ff-montserrat
+	font-family: 'Montserrat', sans-serif !important
+
+
+
+.py-30
+	padding: 30px 0 !important
+
+
+
+
+// FONT-WEIGHT
+// thin
+.fw-100
+	font-weight: 100 !important
+
+// extra-light
+.fw-200
+	font-weight: 200 !important
+
+// light
+.fw-300
+	font-weight: 300 !important
+
+// regular
+.fw-400
+	font-weight: 400 !important
+
+// medium
+.fw-500
+	font-weight: 500 !important
+
+// semi-bold
+.fw-600
+	font-weight: 600 !important
+
+// bold
+.fw-700
+	font-weight: 700 !important
+
+// extra-bold
+.fw-800
+	font-weight: 800 !important
+
+// black
+.fw-900
+	font-weight: 900 !important
+
+// END FONT-WEIGHT
+
+
+
+
+// HEADERS
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6
+	font-weight: 700
+	font-family: 'Montserrat', sans-serif
+
+	a
+		color: inherit
+		+hf
+			color: inherit
+
+h1,
+.h1
+	margin-bottom: 0.4em
+	+rem(46)
+	&.smaller
+		+rem(43)
+		@include media-breakpoint-down(xs)
+			+rem(36)
+	@include media-breakpoint-down(md)
+		+rem(36)
+	@include media-breakpoint-down(sm)
+		+rem(30)
+
+
+h2,
+.h2
+	margin-bottom: 0.4em
+	+rem(40)
+	&.bigger
+		+rem(46)
+		@include media-breakpoint-down(md)
+			+rem(36)
+		@include media-breakpoint-down(sm)
+			+rem(30)
+		@include media-breakpoint-down(xs)
+			+rem(24)
+	&.bigger-2
+		+rem(64)
+		@include media-breakpoint-down(sm)
+			+rem(40)
+		@include media-breakpoint-down(xs)
+			+rem(28)
+	@include media-breakpoint-down(md)
+		+rem(30)
+	@include media-breakpoint-down(sm)
+		+rem(26)
+	@include media-breakpoint-down(xs)
+		+rem(24)
+
+h3,
+.h3
+	margin-bottom: 0.4em
+	+rem(36)
+	@include media-breakpoint-down(sm)
+		+rem(32)
+	@include media-breakpoint-down(xs)
+		+rem(24)
+	&.bigger
+		+rem(38)
+		@include media-breakpoint-down(sm)
+			+rem(32)
+
+h4,
+.h4
+	margin-bottom: 0.4em
+	+rem(30)
+	&.bigger
+		+rem(32)
+		@include media-breakpoint-down(md)
+			+rem(26)
+	&.smaller
+		+rem(28)
+		@include media-breakpoint-down(md)
+			+rem(24)
+		@include media-breakpoint-down(sm)
+			+rem(20)
+	&.smaller-2
+		+rem(24)
+	&.smaller-3
+		+rem(21)
+
+h5,
+.h5
+	margin-bottom: 0.4em
+	+rem(17)
+	&.bigger
+		+rem(19)
+
+h6,
+.h6
+	margin-bottom: 0.4em
+	+rem(14)
+	&.bigger
+		+rem(15)
+
+// END HEADERS
+
+
+
+
+
+// TITLE STYLES
+.title-shadow-black
+	text-shadow: 0px 0px 2px rgba(0,0,0,0.6)
+
+.title-shadow-white
+	text-shadow: 0px 0px 8px rgba(255, 255, 255, 0.55)
+
+.text-grey
+	color: $text-grey !important
+
+.title-line-height
+	line-height: 36px !important
+
+.line-height-20
+	line-height: 20px !important
+
+.line-height-22
+	line-height: 22px !important
+
+.line-height-24
+	line-height: 24px !important
+
+.line-height-25
+	line-height: 25px !important
+
+.line-height-26
+	line-height: 26px !important
+
+.line-height-27
+	line-height: 27px !important
+
+.line-height-28
+	line-height: 28px !important
+
+.line-height-30
+	line-height: 30px !important
+
+.line-height-32
+	line-height: 32px !important
+
+.line-height-35
+	line-height: 35px !important
+
+.line-height-40
+	line-height: 40px !important
+
+.line-height-45
+	line-height: 45px !important
+
+.line-height-50
+	line-height: 50px !important
+	@include media-breakpoint-down(xs)
+		line-height: inherit !important
+
+// END TITLE STYLES
+
+
+
+
+.bg-grey
+	background-color: $grey !important
+
+
+
+::selection 
+	background-color: $danger
+	color: #fff
+
+p,
+address,
+ol,
+ul,
+dl,
+blockquote
+	margin-bottom: 1em
+
+
+address
+	font-style: normal
+
+
+.accordion-title,
+a.accordion-title
+	background-color: $primary
+	+hf
+		color: #fff
+
+.callout
+	border: none
+	border-radius: 0
+	a
+		color: inherit
+
+.tabs
+	+fs
+	a
+		+fc
+			outline: 0
+
+.badge,
+.label
+	margin-bottom: 4px
+
+	&.success,
+	&.primary,
+	&.warning,
+	&.alert
+		color: #fff
+
+
+hr 
+	border: none
+	background-color: rgba(255,255,255,.1)
+	width: 100%
+	height: 1px
+	margin-top: 1.5rem
+	margin-bottom: 1.5rem
+
+
+
+.box-shadow
+	box-shadow: 0px 3px 5px 1px rgba(0, 0, 0, 0.32)
+
+.h-1
+	height: 1px !important
+
+
+// text-color
+.text-primary
+	color: #6fcef8 !important
+.text-secondary
+	color: #908674 !important
+.text-success
+	color: #002620 !important
+.text-danger
+	color: #942420 !important
+.text-warning
+	color: #ffc32e !important
+.text-info
+	color: #92c9cb !important
+.text-light
+	color: #ebebeb !important
+.text-dark
+	color: #464646 !important
+.text-grey
+	color: #59595c !important
+
+
+
+// bg color 
+.bg-primary
+	background-color: #6fcef8 !important
+.bg-secondary
+	background-color: #908674 !important
+.bg-success
+	background-color: #002620 !important
+.bg-danger
+	background-color: #942420 !important
+.bg-warning
+	background-color: #ffc32e !important
+.bg-info
+	background-color: #92c9cb !important
+.bg-light
+	background-color: #ebebeb !important
+.bg-dark
+	background-color: #464646 !important
+.bg-grey
+	background-color: #59595c !important
+
+
+
+
+
+
+
+
+@media (min-width: 1200px)
+	.container
+		max-width: 1240px
+
+
+
+
+
+// Extra small
+// <576px	Small
+// ≥576px	Medium
+// ≥768px	Large
+// ≥992px	Extra large
+// ≥1200px
+
+// breakpoint-only
+// @include media-breakpoint-only(xs)
+// @include media-breakpoint-only(sm)
+// @include media-breakpoint-only(md)
+// @include media-breakpoint-only(lg)
+// @include media-breakpoint-only(xl)
+
+// max-width
+// @include media-breakpoint-down(xs)
+// @include media-breakpoint-down(sm)
+// @include media-breakpoint-down(md)
+// @include media-breakpoint-down(lg)
+
+// min-width
+// @include media-breakpoint-up(sm)
+// @include media-breakpoint-up(md)
+// @include media-breakpoint-up(lg)
+// @include media-breakpoint-up(xl)
+
+
+
+
+
+
+
+
+

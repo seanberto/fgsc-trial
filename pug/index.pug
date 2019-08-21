@@ -1,0 +1,673 @@
+extends templates/template.pug
+
+block content
+
+	// .main
+	main.main
+
+		section.section-home
+
+			.section-home-blink
+
+				.container
+
+					.section-home-title-box
+
+						.section-home-logo
+							img(src="img/beardIcon.png", alt="")
+
+						h3.text-warning.m-0.title-shadow-black.section-home-title
+							| ALL-NATURAL SOAP, CREATED FOR ATHLETES
+
+						h2.bigger-2.text-white.title-shadow-black.mb-3.mb-sm-5.section-home-title
+							| Fighting Goat Soap
+
+					///.section-home-title-box
+
+					.section-home-text-box
+
+						h4.bigger.fw-500.text-white.title-shadow-black.mb-4.text-lg-center
+							| Made in the Castile 
+							em.text-warning.fw-700
+								| tradition 
+								br.d-none.d-sm-block
+								| of liquid 
+							| Soaps with 
+							em.text-warning.fw-700
+								| Satisfying 
+							br.d-none.d-sm-block
+							| Scents
+
+
+						.section-home-list-box
+
+							ul.custom-check-list.mb-4
+								li
+									i.zmdi.zmdi-check
+									| All-Natural Body Wash
+								li
+									i.zmdi.zmdi-check
+									| Castile tradition
+								li
+									i.zmdi.zmdi-check
+									| Tea Tree Oil
+								li
+									i.zmdi.zmdi-check
+									| Formulated for Athletes
+								li
+									i.zmdi.zmdi-check
+									| Fights Gym Funk
+
+
+						///.section-home-list-box
+
+						.text-lg-center
+							a.section-home-btn.mb-4.mb-sm-0(href="#0")
+								img(src="img/getbtn.png", alt="")
+
+						.section-home-img
+							img(src="img/home-product.png", alt="")
+
+					///.section-home-text-box
+				///container
+			///.section-home-blink
+		///section.section-home
+
+
+
+
+		section.section-owl-carousel-logo
+			.container
+				.owl-carousel.owl-theme.owl-carousel-logo.js-owl-carousel-logo
+					.item
+						img(src="img/s-ic1.png", alt="")
+					.item
+						img(src="img/s-ic2.png", alt="")
+					.item
+						img(src="img/s-ic3.png", alt="")
+					.item
+						img(src="img/s-ic4.png", alt="")
+
+
+
+
+		section.section-about-product
+			.container
+
+				.row
+					.col-xl-8.col-lg-7
+
+						h1.bigger.fw-800.line-height-40
+							| TEA TREE OIL BODY WASH 
+							br.d-none.d-sm-block
+							span.text-danger
+								| OUR MOST POPULAR SOAP FOR ATHLETES
+
+						.section-logo-line
+							img(src="img/sec-line.png", alt="")
+
+						p.fw-500.h5.bigger.ff-open-sans.mb-4
+							span.fw-800
+								| Fighting Goat Soap 
+							| products are handmade in Denver, Colorado. Each recipe has been researched and tested with athletes in mind. Each has been designed to take advantage of unique, all-natural ingredients for a deep, moisturizing clean and to improve the health of your skin. 
+
+						p.fw-500.h5.bigger.ff-open-sans
+							| Fighting Goat Soap is also very popular among athletes to toss into their gym bags for showering after a workout. Great for hair too!
+
+					///col
+
+
+					.col-xl-4.col-lg-5
+
+						.section-about-product-img1.mb-5
+							img(src="img/home-product.png", alt="")
+
+					///col
+
+
+					.col-lg-6
+
+						h4.smaller-2.fw-800.text-center.bg-danger.text-white.p-2
+							| All-Natural Tea Tree Oil Body Wash
+
+
+						.row
+							.col-sm-6
+								ul.custom-check-list.mb-0.mb-sm-4
+									li
+										i.zmdi.zmdi-check
+										| Water
+									li
+										i.zmdi.zmdi-check
+										| Potassium Oleate
+									li
+										i.zmdi.zmdi-check
+										| Potassium Cocoate
+									li
+										i.zmdi.zmdi-check
+										| Glycerin
+							///col
+
+							.col-sm-6
+								ul.custom-check-list.mb-0.mb-sm-4
+									li
+										i.zmdi.zmdi-check
+										| Potassium Citrate
+									li
+										i.zmdi.zmdi-check
+										| Citric Acid
+									li
+										i.zmdi.zmdi-check
+										| Tea Tree Oil
+									li
+										i.zmdi.zmdi-check
+										| Ethanol
+							///col
+						///row
+					///col
+
+
+					.col-lg-6
+
+						img.section-about-product-img2.pt-4.pt-sm-0(src="img/s3-img2.png", alt="")
+					///col
+				///row
+
+			///container
+		///section-about-product
+
+
+
+		section.section-list
+			.container
+				ul.custom-check-list.mb-0.text-sm-center
+					li
+						i.zmdi.zmdi-check
+						| ALL-NATURAL
+					li
+						i.zmdi.zmdi-check
+						| HANDMADE IN DENVER
+					li
+						i.zmdi.zmdi-check
+						| DEEP MOISTURIZING
+
+
+
+
+		section.section-reviews
+			.section-reviews-blink
+				.container
+
+					h2.bigger.text-center.line-height-50.text-white
+						| VERY SATISFIED, REAL CUSTOMERS 
+						br.d-none.d-sm-block
+						span.text-warning
+							| HAVE TO SAY ABOUT FIGHTING GOAT SOAP
+
+					.section-logo-line
+						img(src="img/sec-line.png", alt="")
+
+					p.text-center.text-white.h5.ff-open-sans.fw-500.line-height-28
+						| Men are raving about the results they are seeing for a reason! Read what our customers are saying about our product. Try the 
+						br.d-none.d-md-block
+						| Beard Accelerator 
+						span.text-warning.fw-700
+							| TODAY 
+						| and become your own testimonial.
+
+
+					.owl-reviews-box
+
+						.reviews-owl-btn-box
+							button.btn.btn-outline-secondary.reviews-owl-btn.prev.js-reviews-btn-prev-1(type="button")
+								i.zmdi.zmdi-chevron-left
+							button.btn.btn-outline-secondary.reviews-owl-btn.next.js-reviews-btn-next-1(type="button")
+								i.zmdi.zmdi-chevron-right
+
+
+						.owl-dots-btn-box
+							ol#carousel-custom-dots-reviews.owl-dots.owl-dots-btn
+								li.owl-dot.active
+									button.btn
+										img(src="img/review-img-1.png", alt="")
+
+								li.owl-dot
+									button.btn.btn-outline-success
+										img(src="img/review-img-2.png", alt="")
+
+								li.owl-dot
+									button.btn.btn-outline-warning
+										img(src="img/review-img-3.png", alt="")
+
+						///.owl-dots-btn-box
+
+
+						.owl-carousel.owl-theme.owl-carousel-reviews.js-owl-carousel-reviews
+							.item
+								blockquote.review-card
+									p.review-card-text
+										| This is the BEST SOAP EVER! Truly, I honestly can't express how much I love it. It suds up super well, and it has a great tea tree scent that just makes you feel happy and clean. Will definitely buy again!
+
+									ul.review-card-rating
+										li
+											i.zmdi.zmdi-star
+										li
+											i.zmdi.zmdi-star
+										li
+											i.zmdi.zmdi-star
+										li
+											i.zmdi.zmdi-star
+										li
+											i.zmdi.zmdi-star
+
+									p.review-card-author
+										| Marcus R. - September 2nd, 2018
+								///.review-card
+							///item
+
+
+							.item
+								blockquote.review-card
+									p.review-card-text
+										| This soap does it’s job extremely well. The bar is well-made and cleans fully. The scent is excellent.
+
+									ul.review-card-rating
+										li
+											i.zmdi.zmdi-star
+										li
+											i.zmdi.zmdi-star
+										li
+											i.zmdi.zmdi-star
+										li
+											i.zmdi.zmdi-star
+										li
+											i.zmdi.zmdi-star-outline
+
+									p.review-card-author
+										| Gary M. - June 6th, 2018
+								///.review-card
+							///item
+
+
+							.item
+								blockquote.review-card
+									p.review-card-text
+										| This shampoo bar has become my go-to shampoo. It cleans my scalp and hair with a pleasant tea tree scent and tingle . It always rinses cleanly without leaving the build-up that is typical of most shampoo bars. I am ordering my 4th bar today.
+
+									ul.review-card-rating
+										li
+											i.zmdi.zmdi-star
+										li
+											i.zmdi.zmdi-star
+										li
+											i.zmdi.zmdi-star
+										li
+											i.zmdi.zmdi-star
+										li
+											i.zmdi.zmdi-star-half
+
+									p.review-card-author
+										| Colt J. - September 2nd, 2018
+								///.review-card
+							///item
+
+						///owl-carousel-reviews
+					///.owl-reviews-box
+
+				///container
+			///.section-reviews-blink
+		///section-reviews
+
+
+
+
+
+
+		section.section-call-to-action
+			.container
+
+				.section-call-to-action-box
+
+					h3.fw-500.text-warning.text-uppercase.mb-3.mb-md-0.line-height-32
+						| EXTRA 
+						br.d-none.d-xl-block
+						| BENEFIT
+
+					img.call-action-img-arr(src="img/cta-ln.png", alt="")
+
+					h4.smaller-3.text-white.fw-400.mb-3.mb-md-0.line-height-22
+						| Fighting Goat Soap Castile Soap with Tea Tree Oil is 
+						br.d-none.d-xl-block
+						| formulated for athletes to fight ringworm, athlete's foot 
+						br.d-none.d-xl-block
+						| and jock itch naturally!
+
+					a(href="#0").btn-call-action.ml-0.ml-md-3
+						img(src="img/getbtn2.png", alt="")
+
+				///section-call-to-action-box
+			///container
+		///.section-call-to-action
+
+
+
+
+
+
+
+		section.section
+			.container
+
+				h1.bigger.fw-800.line-height-40.text-center
+					| FIGHTING GOAT SOAP WAS BORN 
+					br.d-none.d-md-block
+					span.text-danger
+						| FROM PERSONAL EXPERIENCE
+
+				.section-logo-line
+					img(src="img/sec-line.png", alt="")
+
+				h5.bigger.text-center.mb-5.fw-400.ff-open-sans.line-height-26
+					| Yeah, we're a little different from the other bath and body companies that design soaps for athletes. That's because part of
+					br.d-none.d-md-block
+					| our love of the outdoors and active living involves farming and raising goats.
+
+				.row.no-gutters
+					.col-lg-9
+						.trast-card
+							h4.text-uppercase.mb-0.trast-card-top
+								em.text-danger
+									| WE BELIEVE THIS SETS US APART: 
+								| WE'RE ON A FIRST-NAME BASIS WITH OUR SOURCE OF GOAT MILK FOR OUR soaps.
+							///trast-card-top
+
+							.trast-card-bottom
+								h4.trast-card-bottom--left
+									| THIS IS 
+									br
+									| THELMA
+
+								h4.smaller-2.trast-card-bottom--right
+									| She's the matriarch of our herd, and darn good at her job.
+
+							///trast-card-bottom
+						///trast-card
+					///col
+
+					.col-lg-3
+						.trast-card-img
+					///col
+				///row
+
+
+				.trast-card-footer.d-flex.justify-content-center.align-items-center
+					img.trast-card-footer--img(src="img/beardIcon-black.png", alt="")
+					
+					h4.smaller-2.fw-400.mb-0
+						| We can literally tell you which animal produced the milk in each batch of soap we make.
+				///trast-card-footer
+
+
+			///container
+		///section
+
+
+
+
+
+		section.section-call-to-action
+			.container
+
+				.section-call-to-action-box
+
+					h3.fw-500.text-warning.text-uppercase.mb-3.mb-md-0.line-height-32
+						| EXTRA 
+						br.d-none.d-xl-block
+						| BENEFIT
+
+					img.call-action-img-arr(src="img/cta-ln.png", alt="")
+
+					h4.smaller-3.text-white.fw-400.mb-3.mb-md-0.line-height-22
+						| Fighting Goat Soap Castile Soap with Tea Tree Oil is 
+						br.d-none.d-xl-block
+						| formulated for athletes to fight ringworm, athlete's foot 
+						br.d-none.d-xl-block
+						| and jock itch naturally!
+
+					a(href="#0").btn-call-action.ml-0.ml-md-3
+						img(src="img/getbtn2.png", alt="")
+
+				///section-call-to-action-box
+			///container
+		///.section-call-to-action
+
+
+
+
+
+
+		section.section-all-natural
+			.section-all-natural-blink
+
+				.container
+
+					.section-all-natural-content
+
+						h2.section-all-natural-title
+							| ALL-natural
+							br
+							span
+								| GREAT smelling
+
+						.section-logo-line
+							img(src="img/sec-line-darker.png", alt="")
+
+
+						.section-all-natural-content--text
+
+							p.section-all-natural-text
+								span
+									| Fighting Goat Soap 
+								| Castile Soap with Tea Tree Oil is great smelling, highly cleansing and moisturizing. 
+
+							p.section-all-natural-text.mb-0
+								| Perfect for the gym, wrestlers, fighters and crossfitters.
+
+						///section-all-natural-content--text
+
+
+						.section-all-natural-list-box
+							ul.section-all-natural-list
+								li
+									| ALL-NATURAL BODY WASH
+								li
+									| CASTILE tradition
+								li
+									| TEA TREE OIL
+								li
+									| FIGHTS GYM funk
+
+							img.section-all-natural-img(src="img/home-product.png", alt="")
+
+						///section-all-natural-list-box
+					///section-all-natural-content
+				///container
+			///section-all-natural-blink
+		///.section-all-natural
+
+
+
+
+
+		section.section-call-to-action
+			.container
+
+				.section-call-to-action-box
+
+					h3.fw-500.text-warning.text-uppercase.mb-3.mb-md-0.line-height-32
+						| EXTRA 
+						br.d-none.d-xl-block
+						| BENEFIT
+
+					img.call-action-img-arr(src="img/cta-ln.png", alt="")
+
+					h4.smaller-3.text-white.fw-400.mb-3.mb-md-0.line-height-22
+						| Fighting Goat Soap Castile Soap with Tea Tree Oil is 
+						br.d-none.d-xl-block
+						| formulated for athletes to fight ringworm, athlete's foot 
+						br.d-none.d-xl-block
+						| and jock itch naturally!
+
+					a(href="#0").btn-call-action.ml-0.ml-md-3
+						img(src="img/getbtn2.png", alt="")
+
+				///section-call-to-action-box
+			///container
+		///.section-call-to-action
+
+
+
+
+
+
+		section.section-form
+			.container
+
+
+
+				.row
+					.col-lg-7
+
+						h4.bigger.text-warning.m-0.title-shadow-black.text-center
+							| REVOLUTIONARY, ALL NATURAL
+
+						h2.bigger.text-white.title-shadow-black.text-center.mb-4
+							| Fighting Goat Soap
+
+						.section-form-text-box
+
+							h4.bigger.fw-500.text-white.title-shadow-black.mb-5.text-center
+								| Made in the Castile 
+								em.text-warning.fw-700
+									| tradition of liquid 
+								br.d-none.d-xl-block
+								| Soaps with 
+								em.text-warning.fw-700
+									| Satisfying 
+								| Scents
+
+
+							.section-home-list-box
+
+								ul.custom-check-list
+									li
+										i.zmdi.zmdi-check
+										| All-Natural Body Wash
+									li
+										i.zmdi.zmdi-check
+										| Castile tradition
+									li
+										i.zmdi.zmdi-check
+										| Tea Tree Oil
+									li
+										i.zmdi.zmdi-check
+										| Formulated for Athletes
+									li
+										i.zmdi.zmdi-check
+										| Fights Gym Funk
+
+
+							img.form-product-img(src="img/home-product.png", alt="")
+							img.form-product-arrow(src="img/s8-arw.png", alt="")
+
+
+							///.section-home-list-box
+						///.section-home-text-box
+					///col
+
+
+
+					.col-lg-5
+
+						.contact-form-container
+							.form-header
+								p.mb-0
+									| TELL US WHERE TO send
+									br
+									span
+										| YOUR ORDER today!
+							///form-header
+
+							form.form
+								.form-group.row
+									label.col-sm-3.col-form-label(for='inputLine1') First Name
+									.col-sm-9
+										input#inputLine1.form-control(type='text', placeholder='First Name')
+
+
+								.form-group.row
+									label.col-sm-3.col-form-label(for='inputLine2') Last Name
+									.col-sm-9
+										input#inputLine2.form-control(type='text', placeholder='Last Name')
+
+
+								.form-group.row
+									label.col-sm-3.col-form-label(for='inputLine3') Address
+									.col-sm-9
+										input#inputLine3.form-control(type='text', placeholder='Address Line 1')
+
+
+								.form-group.row
+									label.col-sm-3.col-form-label(for='inputLine4') City
+									.col-sm-9
+										input#inputLine4.form-control(type='text', placeholder='City')
+
+
+								.form-group.row
+									label.col-sm-3.col-form-label(for='inputLine5') State
+									.col-sm-9
+										select#inputLine5.form-control
+											option Select State
+											option State 1
+											option State 2
+											option State 3
+											option State 4
+											option State 5
+
+
+								.form-group.row
+									label.col-sm-3.col-form-label(for='inputLine6') Zip Code
+									.col-sm-9
+										input#inputLine6.form-control(type='text', placeholder='Postal Code')
+
+
+								.form-group.row
+									label.col-sm-3.col-form-label(for='inputLine7') Phone
+									.col-sm-9
+										input#inputLine7.form-control(type='tel', placeholder='Phone Number')
+
+
+								.form-group.row.mb-4
+									label.col-sm-3.col-form-label(for='inputLine8') Email
+									.col-sm-9
+										input#inputLine8.form-control(type='email', placeholder='Email Address')
+
+								.text-center.mb-4
+									button(type="submit").form-btn.pulse
+										img(src="img/getbtnMain.png", alt="")
+
+								img.form-logo(src="img/frm-logo.png", alt="")
+
+
+						///contact-form-container
+
+					///col
+				///row
+
+			///container
+		///section.section-home
+
+
+
+
+	/// .main

@@ -1,0 +1,82 @@
+
+.header 
+	min-height: 123px
+	@include media-breakpoint-down(md)
+		min-height: 116px
+
+#time
+	min-width: 70px
+	display: inline-block
+
+.header-content
+	border-bottom: 1px solid #dedede
+	position: fixed
+	top: 0
+	left: 0
+	right: 0
+	z-index: 1999
+
+.header-top
+	background-color: $danger
+	padding: 10px	0
+	text-align: center
+	@include media-breakpoint-down(lg)
+		.container
+			max-width: 100%
+
+.header-bottom
+	background-color: #fff
+	padding: 15px 0
+	@include media-breakpoint-down(lg)
+		.container
+			max-width: 100%
+	@include media-breakpoint-down(md)
+		padding: 10px 0
+
+.logo
+	display: inline-block
+	img
+		width: 100%
+		max-width: 259px
+		@include media-breakpoint-down(md)
+			max-width: 200px
+
+
+.header-bottom-btn
+	display: inline-block
+	img
+		width: 100%
+		max-width: 217px
+		+trans
+	&:hover 
+		text-decoration: none
+		cursor: pointer
+	&:hover img
+		transform: scale(1.01)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// @media screen and (max-width: 767px)
+// 	.navbar-app-link
+// 		position: relative
+
+
