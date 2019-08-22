@@ -52,11 +52,11 @@ var image = require('gulp-image');
 // Paths
 var paths = {
 	dist: {
-		html: './', // same directory
-		js: 'js',
-		css: 'css',
-		img: 'img',
-		server: './' // same directory
+		html: 'dist',
+		js: 'dist/js',
+		css: 'dist/css',
+		img: 'dist/img',
+		server: 'dist',
 	},
 	src: {
 		pug: ['pug/**/*.pug', '!pug/abstracts/bemto/**/*.*'],
@@ -146,11 +146,17 @@ gulp.task('sass-production', function () {
 // images optimization
 gulp.task('img', function () {
 	return gulp.src(paths.src.img)
-		// take only changed images
-		.pipe(cached(paths.src.img))
 		.pipe(image())
 		.pipe(gulp.dest(paths.dist.img));
 });
+
+// // Webpack
+// var webpack = require('webpack-stream');
+// gulp.task('compressjs', function() {
+//   return gulp.src(paths.src.js)
+//     .pipe(webpack())
+//     .pipe(gulp.dest(paths.dist.js));
+// });
 
 // clean
 gulp.task('clean', function () {
@@ -158,7 +164,6 @@ gulp.task('clean', function () {
 		[
 			paths.clean.css,
 			paths.clean.html,
-			paths.clean.templates
 		],
 		{
 			read: false
@@ -230,7 +235,7 @@ gulp.task('prod', function(cb) {
 	// run functions in order - first clean (delete) files, then others
 	runSequence(
 		'clean',
-		['img', 'pug', 'sass-production'],
+		['img', 'compressjs', 'pug', 'sass-production'],
 		'watch-production',
 		cb
 	);
