@@ -1,8 +1,9 @@
+let script = document.createElement('script');
+script.type = 'text/javascript';
+script.src = 'https://fightinggoatassets.s3.us-east-2.amazonaws.com/trial/owlcarousel/owl.carousel.min.js';
+document.getElementsByTagName('head')[0].appendChild(script);
+
 $(document).ready(function() {
-
-
-
-
 
 	// owl-carousel .js-owl-logo
 
