@@ -1,3 +1,8 @@
+@import "https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800";
+@import "https://fonts.googleapis.com/css?family=Open+Sans:400,600,700";
+@import "https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css";
+@import "https://fightinggoatassets.s3.us-east-2.amazonaws.com/trial/owlcarousel/owl.carousel.min.css";
+@import "https://fightinggoatassets.s3.us-east-2.amazonaws.com/trial/owlcarousel/owl.theme.default.css";
 /*!
  * Bootstrap v4.1.3 (https://getbootstrap.com/)
  * Copyright 2011-2018 The Bootstrap Authors
@@ -1140,7 +1145,7 @@ body {
 
 .section-home {
   background-color: #000;
-  background-image: url(../img/home-bg.jpg);
+  background-image: url(https://fightinggoatassets.s3.us-east-2.amazonaws.com/trial/img/home-bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center top;
@@ -1417,7 +1422,7 @@ body {
 
 .section-reviews {
   background-color: #151514;
-  background-image: url(../img/reviews-bg.jpg);
+  background-image: url(https://fightinggoatassets.s3.us-east-2.amazonaws.com/trial/img/reviews-bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top;
@@ -1798,7 +1803,7 @@ body {
   height: 100%;
   width: 100%;
   max-width: 450px;
-  background-image: url(../img/sec1-img1.png);
+  background-image: url(https://fightinggoatassets.s3.us-east-2.amazonaws.com/trial/img/sec1-img1.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -1828,7 +1833,7 @@ body {
 }
 
 .section-all-natural {
-  background-image: url(../img/section-all-natural-bg.jpg);
+  background-image: url(https://fightinggoatassets.s3.us-east-2.amazonaws.com/trial/img/section-all-natural-bg.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -2058,7 +2063,7 @@ body {
 
 .section-form {
   padding: 70px 0;
-  background-image: url(../img/section-form-bg.jpg);
+  background-image: url(https://fightinggoatassets.s3.us-east-2.amazonaws.com/trial/img/section-form-bg.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

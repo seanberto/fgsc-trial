@@ -134,7 +134,7 @@ gulp.task('sass-production', function () {
 		.pipe(sassGlob())
 		.pipe(sass({
 			errLogToConsole: true,
-			outputStyle: 'compressed'
+			outputStyle: 'expanded'
 		}))
 		.on('error', notify.onError(function (error) {
 			return error.message;
@@ -230,13 +230,9 @@ gulp.task('prod', function(cb) {
 	// run functions in order - first clean (delete) files, then others
 	runSequence(
 		'clean',
-		['img', 'pug', 'sass-production'],
+		['pug', 'sass-production'],
 		'watch-production',
 		cb
 	);
 
 });
-
-
-
-
