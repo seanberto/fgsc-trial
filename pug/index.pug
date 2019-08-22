@@ -598,29 +598,29 @@ block content
 										| YOUR ORDER today!
 							///form-header
 
-							form.form
+							form.form(method='GET' action='https://www.fightinggoat.com/a/secure/checkout/SUDTqPo7C2P1RgXlzgfS')
 								.form-group.row
 									label.col-sm-3.col-form-label(for='inputLine1') First Name
 									.col-sm-9
-										input#inputLine1.form-control(type='text', placeholder='First Name')
+										input#inputLine1.form-control(type='text', placeholder='First Name', name='first_name')
 
 
 								.form-group.row
 									label.col-sm-3.col-form-label(for='inputLine2') Last Name
 									.col-sm-9
-										input#inputLine2.form-control(type='text', placeholder='Last Name')
+										input#inputLine2.form-control(type='text', placeholder='Last Name', name='last_name')
 
 
 								.form-group.row
 									label.col-sm-3.col-form-label(for='inputLine3') Address
 									.col-sm-9
-										input#inputLine3.form-control(type='text', placeholder='Address Line 1')
+										input#inputLine3.form-control(type='text', placeholder='Address Line 1', name='address1')
 
 
 								.form-group.row
 									label.col-sm-3.col-form-label(for='inputLine4') City
 									.col-sm-9
-										input#inputLine4.form-control(type='text', placeholder='City')
+										input#inputLine4.form-control(type='text', placeholder='City', name='city')
 
 
 								.form-group.row
@@ -638,19 +638,19 @@ block content
 								.form-group.row
 									label.col-sm-3.col-form-label(for='inputLine6') Zip Code
 									.col-sm-9
-										input#inputLine6.form-control(type='text', placeholder='Postal Code')
+										input#inputLine6.form-control(type='text', placeholder='Postal Code', name='zip')
 
 
 								.form-group.row
 									label.col-sm-3.col-form-label(for='inputLine7') Phone
 									.col-sm-9
-										input#inputLine7.form-control(type='tel', placeholder='Phone Number')
+										input#inputLine7.form-control(type='tel', placeholder='Phone Number', name='phone')
 
 
 								.form-group.row.mb-4
 									label.col-sm-3.col-form-label(for='inputLine8') Email
 									.col-sm-9
-										input#inputLine8.form-control(type='email', placeholder='Email Address')
+										input#inputLine8.form-control(type='email', placeholder='Email Address', name='email')
 
 								.text-center.mb-4
 									button(type="submit").form-btn.pulse
