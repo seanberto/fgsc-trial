@@ -56,6 +56,8 @@ var paths = {
 		js: 'dist/js',
 		css: 'dist/css',
 		img: 'dist/img',
+		static: 'dist',
+		vendor: 'dist/vendor',
 		server: 'dist',
 	},
 	src: {
@@ -64,7 +66,9 @@ var paths = {
 		js: 'js/**/*.js',
 		sass: 'sass/main.sass',
 		// sass: ['sass/main.sass', 'sass/bootstrap/bootstrap.scss', 'sass/fontello/fontello.scss', 'sass/font-awesome/font-awesome.scss', 'sass/owl-carousel/owl.carousel.scss'],
-		img: ['img/**/*']
+		img: ['img/**/*'],
+		static: ['static/**/*'],
+		vendor: ['vendor/**/*']
 	},
 	watch: {
 		pug: 'pug/**/*.pug',
@@ -146,17 +150,28 @@ gulp.task('sass-production', function () {
 // images optimization
 gulp.task('img', function () {
 	return gulp.src(paths.src.img)
+		.pipe(cached(paths.src.img))
 		.pipe(image())
 		.pipe(gulp.dest(paths.dist.img));
 });
 
-// // Webpack
-// var webpack = require('webpack-stream');
-// gulp.task('compressjs', function() {
-//   return gulp.src(paths.src.js)
-//     .pipe(webpack())
-//     .pipe(gulp.dest(paths.dist.js));
-// });
+// Move JS
+gulp.task('js', function() {
+  return gulp.src(paths.src.js)
+  	.pipe(gulp.dest(paths.dist.js));
+});
+
+// Move Static Assets
+gulp.task('static', function() {
+  return gulp.src(paths.src.static)
+  	.pipe(gulp.dest(paths.dist.static));
+});
+
+// Move Vendor Files
+gulp.task('vendor', function() {
+  return gulp.src(paths.src.vendor)
+  	.pipe(gulp.dest(paths.dist.vendor));
+});
 
 // clean
 gulp.task('clean', function () {
@@ -235,7 +250,7 @@ gulp.task('prod', function(cb) {
 	// run functions in order - first clean (delete) files, then others
 	runSequence(
 		'clean',
-		['img', 'compressjs', 'pug', 'sass-production'],
+		['img', 'js', 'static', 'vendor', 'pug', 'sass-production'],
 		'watch-production',
 		cb
 	);
