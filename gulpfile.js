@@ -251,7 +251,6 @@ gulp.task('prod', function(cb) {
 	runSequence(
 		'clean',
 		['img', 'js', 'static', 'vendor', 'pug', 'sass-production'],
-		'watch-production',
 		cb
 	);
 
