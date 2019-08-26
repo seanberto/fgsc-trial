@@ -10,8 +10,11 @@ header#home.header
 						| WARNING: 
 					| Due to extremely high media demand, there is limited supply of Fighting Goat Soap in stock as of 
 					span.text-warning.fw-700
-						| August 1, 2019. 
-					| HURRY! 
+						script.
+							var options = { month: 'long', day: 'numeric' };
+							var today = new Date();
+							document.write(today.toLocaleDateString("en-US", options));
+					| .&nbsp;HURRY! 
 					span#time.text-warning.fw-700
 						| 00:00:00
 
