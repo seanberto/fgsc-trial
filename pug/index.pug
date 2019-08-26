@@ -576,17 +576,17 @@ block content
 										| YOUR ORDER today!
 							///form-header
 
-							form.form(method='GET' action='https://www.fightinggoat.com/a/secure/checkout/SUDTqPo7C2P1RgXlzgfS')
+							form.form(method='GET' action='https://www.fightinggoat.com/a/secure/checkout/uANS6ffZ4XP6gceFm1wX')
 								.form-group.row
 									label.col-sm-3.col-form-label(for='inputLine1') First Name
 									.col-sm-9
-										input#inputLine1.form-control(type='text', placeholder='First Name', name='first_name')
+										input#inputLine1.form-control(type='text', placeholder='First Name', name='first_name', required)
 
 
 								.form-group.row
 									label.col-sm-3.col-form-label(for='inputLine2') Last Name
 									.col-sm-9
-										input#inputLine2.form-control(type='text', placeholder='Last Name', name='last_name')
+										input#inputLine2.form-control(type='text', placeholder='Last Name', name='last_name', required)
 
 
 								.form-group.row
@@ -604,14 +604,61 @@ block content
 								.form-group.row
 									label.col-sm-3.col-form-label(for='inputLine5') State
 									.col-sm-9
-										select#inputLine5.form-control
-											option Select State
-											option State 1
-											option State 2
-											option State 3
-											option State 4
-											option State 5
-
+										select(name='province')#inputLine5.form-control
+											option Alabama
+											option Alaska
+											option Arizona
+											option Arkansas
+											option California
+											option Colorado
+											option Connecticut
+											option Delaware
+											option District of Columbia
+											option Florida
+											option Georgia
+											option Guam
+											option Hawaii
+											option Idaho
+											option Illinois
+											option Indiana
+											option Iowa
+											option Kansas
+											option Kentucky
+											option Louisiana
+											option Maine
+											option Maryland
+											option Massachusetts
+											option Michigan
+											option Minnesota
+											option Mississippi
+											option Missouri
+											option Montana
+											option Nebraska
+											option Nevada
+											option New Hampshire
+											option New Jersey
+											option New Mexico
+											option New York
+											option North Carolina
+											option North Dakota
+											option Ohio
+											option Oklahoma
+											option Oregon
+											option Palau
+											option Pennsylvania
+											option Puerto Rico
+											option Rhode Island
+											option South Carolina
+											option South Dakota
+											option Tennessee
+											option Texas
+											option Utah
+											option Vermont
+											option Virginia
+											option Washington
+											option West Virginia
+											option Wisconsin
+											option Wyoming
 
 								.form-group.row
 									label.col-sm-3.col-form-label(for='inputLine6') Zip Code
@@ -628,7 +675,7 @@ block content
 								.form-group.row.mb-4
 									label.col-sm-3.col-form-label(for='inputLine8') Email
 									.col-sm-9
-										input#inputLine8.form-control(type='email', placeholder='Email Address', name='email')
+										input#inputLine8.form-control(type='email', placeholder='Email Address', name='email', required)
 
 								.text-center.mb-4
 									button(type="submit").form-btn.pulse
