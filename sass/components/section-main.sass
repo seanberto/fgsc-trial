@@ -82,7 +82,9 @@
 .section-home-logo
 	position: absolute
 	left: 17%
-	top: 0
+	top: 12px
+	@include media-breakpoint-down(md)
+		display: none
 	img 
 		width: 100%
 		max-width: 90px
@@ -178,12 +180,6 @@
 
 
 
-
-
-
-
-
-
 .section-reviews
 	background-color: #151514
 	background-image: url(../img/reviews-bg.jpg)
@@ -251,7 +247,7 @@
 		+trans
 		img
 			width: 100%
-			max-width: 151px
+			max-width: 140px
 			border-radius: 50%
 			@include media-breakpoint-down(sm)
 				max-width: 75px
