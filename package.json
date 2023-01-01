@@ -23,7 +23,7 @@
     "install": "^0.13.0",
     "npm": "^6.11.2",
     "run-sequence": "^1.2.2",
-    "webpack-stream": "^5.2.1"
+    "webpack-stream": "^7.0.0"
   },
   "dependencies": {}
 }
